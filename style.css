@@ -611,14 +611,47 @@ textarea[name="Textarea"] {
   .navbar {
     padding: 10px;
     position: fixed;
-    top: 0;
-    z-index: 9999;
+  }
+  #navbar-links a {
+    display: block;
   }
 
+  .bar-icon {
+    position: absolute;
+    right: 15px;
+    top: 13px;
+    transform: translateY(0px) !important;
+  }
+  .bar-icon:active {
+    transform: translateY(0px);
+  }
+  .navbar li a:active {
+    color: #daa520;
+    transform: translateY(0px) !important;
+  }
+  .navbar li:active {
+    background-image: none;
+    color: #daa520;
+  }
   .toggle {
     visibility: visible;
-    align-self: center;
   }
+  .paws-gif {
+    visibility: visible;
+  }
+
+  .btn-to-products {
+    width: 200px;
+    background-color: #fff;
+    box-shadow: 0 0 10px #daa520 !important;
+    background-image: url(images/grass-for-btn.png) !important;
+  }
+  .btn-to-products a {
+    font-size: 22px !important;
+    top: 7px;
+    color: #000;
+  }
+
   .product-container {
     flex-direction: column;
     margin: 0 auto !important;
@@ -634,11 +667,16 @@ textarea[name="Textarea"] {
     display: block;
     margin-bottom: 30px;
   }
-  .contact-container {
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
+  .g-map {
+    display: none;
   }
+  .g-map2 {
+    display: none;
+  }
+  .message-us-container {
+    max-width: 450px;
+  }
+
   .left {
     flex-basis: 500px;
     margin-top: 200px;
@@ -649,6 +687,7 @@ textarea[name="Textarea"] {
   .description-home {
     margin: 20px 30px;
     font-size: 15px !important;
+    color: #fff;
   }
   .logo {
     width: 50px;
@@ -659,12 +698,7 @@ textarea[name="Textarea"] {
     font-size: 12px;
     font-weight: 500;
   }
-  .navbar li:hover {
-    background: none !important;
-  }
-  .navbar a:hover {
-    color: #daa520 !important;
-  }
+
   .navbar {
     justify-content: space-around;
     align-items: flex-end;
@@ -673,8 +707,16 @@ textarea[name="Textarea"] {
     display: block;
     margin: 0 auto;
   }
+  .contact-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
   input {
     width: 100%;
+  }
+  .btn-paws {
+    visibility: hidden;
   }
   .paws {
     width: 50px !important;
@@ -764,9 +806,6 @@ textarea[name="Textarea"] {
     height: 40px;
     bottom: 20px;
     right: 8px;
-  }
-  footer {
-    display: none;
   }
 }
 @media (max-width: 768px) {
