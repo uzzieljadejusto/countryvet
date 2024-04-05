@@ -765,7 +765,7 @@ textarea[name="Textarea"] {
     position: absolute;
   }
   .founder-p {
-    font-size: 15px;
+    font-size: 13px !important;
     bottom: 5px;
   }
   .company {
